@@ -158,6 +158,7 @@ header{
     .item{
         flex-direction: column;
         width: 90%;
+        height: 500px;
         height: max-content;
 
         & .frame{
