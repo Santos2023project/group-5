@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body{
+    height: max-content;
+    width: 100vw;
+}
+
+.container{
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10%;
+}
+
+header{
+    background-color: #541675;
+    color: #C4FEFF;
+    height: 15%;
+    width: 100%;
+    font-size: 2em;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.opening{
+    height: 400px;
+    width: 100%;
+    background-color: #54167533;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: background 1s; /* For Safari 3.0 to 6.0 */
+    transition: background 1s; /* For modern browsers */
+
+    & h1{
+        & span{
+            color: #541675f4;
+        }
+
+        & span:hover{
+            color: #c926adf4;
+        }
+        font-size: 3em;
+        text-align: center;
+    }
+}
+
+.opening:hover{
+    background: url(https://i.makeagif.com/media/5-25-2021/GVAQUl.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & h1{
+        & span{
+            color: #fff;
+        }
+
+        & span:hover{
+            color: #c926adf4;
+        }
+        font-size: 3em;
+        text-align: center;
+    }
+}
+
+.item{
+    height: 500px;
+    width: 75%;
+    background-color: #7E38B7;
+    margin-top: 5%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5%;
+    gap: 1rem;
+    -webkit-transition: background 1s; /* For Safari 3.0 to 6.0 */
+    transition: background 1s; /* For modern browsers */
+}
+
+.item:hover{
+    background: url(https://img.freepik.com/premium-photo/pink-butterflies-against-pink-background_900775-4522.jpg?w=1060);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.frame{
+    height: 100%;
+    width: max-content;
+    background-color: #C4FEFF;
+    border-radius: 15px;
+    padding: 1%;
+
+    & img{
+        height: 100%;
+        object-fit: contain;
+        border-radius: 15px;
+    }
+}
+
+.text{
+    height: 100%;
+    width: 70%;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2%;
+    gap: 1em;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    & p{
+        text-indent: 3em;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        height: max-content;
+        width: 100%;
+    }
+
+    .opening{
+        height: 200px;
+
+        & h1{
+            font-size: 1em;
+        }
+    }
+
+    .opening:hover{
+        & h1{
+            font-size: 1em;
+        }
+    }
+
+    .item{
+        flex-direction: column;
+        width: 90%;
+        height: max-content;
+
+        & .frame{
+            height: 100%;
+            width: 100%;
+
+            & img{
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .text{
+        height: max-content;
+        width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 3%;
+        padding-right: 3%;
+        & h2{
+            font-size: 16px;
+            text-align: center;
+        }
+
+        & p{
+            text-indent: 1.5em;
+            font-size: 14px;
+        }
+    }
+}
+
